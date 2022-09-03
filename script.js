@@ -22,7 +22,7 @@
       return async function (event) {
         // QUERY API
         const host = new URL(url).host
-        let response = await fetch("http://localhost:4000/?url=" + host)
+        let response = await fetch("https://virustotal-extension.herokuapp.com/?url=" + host)
         let data = await response.json()
         // ADD STATS TO DOCUMENT
         let button = event.target
