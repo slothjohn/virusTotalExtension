@@ -33,4 +33,4 @@ app.get("/", async (req, res) => {
   res.send(data)
 });
 
-app.listen(4000);
+app.listen(process.env.PORT || 4000);
