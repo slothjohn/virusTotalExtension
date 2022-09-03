@@ -37,24 +37,15 @@
 
       for (let vendor in vendorResults) {
         if (vendorResults[vendor].result == "clean") {
-          clean = clean + 1
+          clean++
         }
         else if(vendorResults[vendor].result == "unrated") {
-          count = count -1
+          count--
         }
-        count = count + 1
+        count++
       }
       let result = clean + "/" + count + " clean";
       return result
-      // const links = document.querySelectorAll(
-      //   "[data-sokoban-container] [data-header-feature] a"
-      // );
-      // for (const link of links) {
-      //   const p = document.createElement("p");
-      //   p.innerText = result;
-      //   link.parentElement.append(p);
-      // }
     }
-
   }
 })();
