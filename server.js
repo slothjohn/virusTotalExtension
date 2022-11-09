@@ -21,7 +21,7 @@ app.get("/", async (req, res) => {
     headers: {
       Accept: "application/json",
       "x-apikey":
-        "7e6079eaa86612c6873ced2c45977cf5b6098d847db36eb2699f02882d732391",
+        process.env.KEY,
     },
   };
   const response = await fetch(
